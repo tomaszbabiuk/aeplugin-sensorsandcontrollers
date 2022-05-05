@@ -1,4 +1,4 @@
-# Bash action for Automate-Everything that allows for running bash/cmd scripts
+# Sensor and controllers objects for Automate-Everything
 
 This is a plugin for [Automate-Everything](https://github.com/tomaszbabiuk/automate-everything)
 
@@ -7,7 +7,7 @@ This is a plugin for [Automate-Everything](https://github.com/tomaszbabiuk/autom
 md work
 cd work
 git clone https://github.com/tomaszbabiuk/automate-everything.git
-git clone https://github.com/tomaszbabiuk/aeplugin-bashaction.git
+git clone https://github.com/tomaszbabiuk/aeplugin-sensorsandcontrollers.git
 ```
 
 # Automate-Everything frontend installation
@@ -28,7 +28,7 @@ After running this task, the backend application is installed in 'automate-every
 
 # Plugin installation
 ```bash
-cd aeplugin-bashaction
+cd aeplugin-sensorsandcontrollers
 gradlew.bat buildForAutomateEverything
 ```
 After running this task, the plugin is installed in 'automate-everything/output/plugins' folder 
@@ -46,5 +46,5 @@ Path to JAR:'automate-everything/output/bin/ae-backend-all.jar'
 Working directory 'automate-everything/output'
 Search sources using module's classpath: 'automate-everything.ae-backend.main'
 Before lunch:
- - run gradle task: aeplugin-bashaction:buildForAutomateEverything
+ - run gradle task: aeplugin-sensorsandcontrollers:buildForAutomateEverything
  - run gradle task: automate-everything.ae-backend:assembleBackend
