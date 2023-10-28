@@ -24,7 +24,7 @@ import org.pf4j.Extension
 @Extension
 class CoreBlocksCollector : BlockFactoriesCollector {
 
-    override fun collect(thisDevice: Configurable?): List<BlockFactory<*>> {
+    override fun collect(thisDevice: Configurable): List<BlockFactory<*>> {
         return listOf(
             // temperature
             ComparisonBlockFactory(Temperature::class.java, CommonBlockCategories.Temperature),
