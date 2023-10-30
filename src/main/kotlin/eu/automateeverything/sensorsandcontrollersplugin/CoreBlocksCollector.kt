@@ -26,6 +26,7 @@ class CoreBlocksCollector : BlockFactoriesCollector {
 
     override fun collect(
         thisDevice: Configurable,
+        instanceId: Long?,
         context: CollectionContext
     ): List<BlockFactory<*>> {
         if (context == CollectionContext.Automation) {
