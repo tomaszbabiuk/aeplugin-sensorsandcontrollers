@@ -28,7 +28,7 @@ class CoreBlocksCollector : BlockFactoriesCollector {
         thisDevice: Configurable,
         instanceId: Long?,
         context: CollectionContext
-    ): List<BlockFactory<*>> {
+    ): List<BlockFactory<*, *>> {
         if (context == CollectionContext.Automation) {
             return listOf(
                 // temperature
